@@ -56,8 +56,9 @@
 				context.fillStyle="#FFFFFF";*/
 				//context.clearRect(0, 0, elem.width, elem.height);
 				setInterval(function(){
-					context.fillStyle="#FFFFFF";
+					context.fillStyle="#000000";
 					context.clearRect(0, 0, elem.width, elem.height);
+					context.fillRect(0,0,elem.width,elem.height);
 					console.log("hello world");
 					var bar_colour =  "#0000FF"
 					
@@ -99,7 +100,7 @@
 						red = 200;
 					}else{
 					    if(music_played == false){
-							var audio = new Audio("forever_young.mp3");
+							var audio = new Audio("bob.mp3");
 							audio.play();
 							music_played = true;
 						}
